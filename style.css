@@ -1,0 +1,91 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html{font-family: 'Noto Serif KR', serif;}
+body{overflow: hidden;}
+.text-white{color:white}
+.p{display: block;
+}
+.p1{font-size: 3em;font-weight:200;word-spacing: -1px;line-height: 1.8;color:white;
+}
+.p2{font-size: 0.9em;font-weight:200;word-spacing: -1px;line-height: 1.8;color:white; 
+}
+.p3{font-size: 1.1em;font-weight:200;word-spacing: -1px;line-height: 1.8;color:white;
+}
+
+#abs1{position: absolute;left: calc(50% - 270px);top:70%;}
+#abs2{position: absolute;left:0;top:2%;}
+#abs3{position: absolute;left: 5%;top:95%;}
+#abs4{position: absolute;left: calc(50% - 100px);;top:95%;}
+#abs5{position: absolute;right: 5%;top:95%;}
+
+#cl{position: absolute;left: calc(50% - 300px);;top:30%;filter: blur(50px);background:linear-gradient(90deg,rgb(0, 255, 0),#0ff)}
+#cl2{position: absolute;left:calc(50% + 80px);top:30%;filter: blur(50px);background:linear-gradient(90deg,#0ff,rgb(255, 0, 242))}
+
+.circle-container{
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:radial-gradient(#242424,#080808);
+    position: absolute;
+}
+
+
+
+ .circleG1 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: white;
+    animation: animate1 5s linear infinite;
+}
+@keyframes animate1
+{
+    0%{
+        transform: translateX(0); rotate:(0deg) ;
+    }
+    30%{
+        transform: translateX(250px); rotate:(240deg) ;
+    }
+    60%{
+        transform: translateX(250px); rotate:(480deg) ;
+    }
+    100%{
+        transform: translateX(0px); rotate:(720deg) ;
+    }
+}
+.circleG2 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: white;
+    animation: animate2 5s linear infinite;
+}
+@keyframes animate2
+{
+    0%{
+        transform: translateX(0); rotate:(0deg) ;
+    }
+    30%{
+        transform: translateX(-250px); rotate:(-240deg) ;
+    }
+    60%{
+        transform: translateX(-250px); rotate:(-480deg) ;
+    }
+    100%{
+        transform: translateX(0px); rotate:(-720deg) ;
+    }
+
+}
+
+.circle {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+
+
+
+
